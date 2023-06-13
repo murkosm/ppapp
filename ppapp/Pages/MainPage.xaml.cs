@@ -24,10 +24,17 @@ namespace ppapp.Pages
         {
             InitializeComponent();
         }
-        private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        private void HomeMenu_Click(object sender, RoutedEventArgs e)
         {
-         //здесь нужно прописать функции для кнопок Каталог товаров, Записаться и На главную
 
         }
+        //private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    //здесь нужно прописать функции для кнопок Каталог товаров, Записаться и На главную
+
+
+        //}
+
     }
 }

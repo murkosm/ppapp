@@ -9,7 +9,7 @@ namespace ppapp.DB
 {
    public class AppContext
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source = LAPTOP-CL4O429I\SQLEXPRESS;Initial Catalog = changsalon;Integrated Security=true"); //подключение к БД
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source = 192.168.49.180;Initial Catalog = changsalon;Integrated Security=true"); //подключение к БД
 
 
         public void OpenConnection()

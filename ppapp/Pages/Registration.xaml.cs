@@ -35,9 +35,22 @@ namespace ppapp.Pages
           
             var login = textbox_login.Text;
             var password = textbox_password.Text;
+            var name = textbox_name.Text;
+            var email = textbox_email.Text;
+            var surname = textbox_surname.Text;
+            var patronymic = textbox_patronymic.Text;   
+            var date = textbox_date.Text;
+            var sex = textbox_sex.Text;
+
+
+            
+
+
+
+
 
             //снова обращаемся к бд, чтобы онa создалa и сохранила новые данные
-            string querystring = $"INSERT INTO [User1](login_user, password) values('{login}', '{password}')";
+            string querystring = $"INSERT INTO [User1](login_user, password) values('{login}', '{password}',)";
 
 
             SqlCommand command = new SqlCommand(querystring, appContext.GetConnection());

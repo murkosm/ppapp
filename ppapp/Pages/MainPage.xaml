@@ -20,35 +20,12 @@
                 </StackPanel>
             </Grid>
 
-            <Grid Width="150" HorizontalAlignment="Left" Background="#FFC8CBE0">
+            <Grid Width="150" HorizontalAlignment="Left" Background="#FFC8CBE0" Margin="0,51,0,0">
                 <StackPanel>
-                    <Grid Width="150" Height="50" Background="#FFFF4A6D" RenderTransformOrigin="0.5,0.5">
-
-                    </Grid>
-                    <ListView x:Name="ListViewMenu" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewMenu_SelectionChanged">
-                        <ListViewItem x:Name="ProductsMenu">
-                            <StackPanel Orientation="Horizontal">
-                                <!--<materialDesing:PackIcon  Kind="Cart" Foreground="#FFFF4A6D"/>-->
-                                <TextBlock Text="Каталог товаров" FontFamily="Tahoma"/>
-                            </StackPanel>
-
-                        </ListViewItem>
-                        <ListViewItem x:Name="ServiceMenu" >
-                            <StackPanel Orientation="Horizontal">
-                                <!--<materialDesing:PackIcon  Kind="Phone" Foreground="#FFFF4A6D"/>-->
-                                <TextBlock Text="Записаться"   FontFamily="Tahoma"/>
-                            </StackPanel>
-                        </ListViewItem>
-                        <ListViewItem x:Name="HomeMenu">
-                            <StackPanel Orientation="Horizontal">
-                                <!--<materialDesing:PackIcon  Kind="Home" Foreground="#FFFF4A6D"/>-->
-                                <TextBlock Text="На главную" FontFamily="Tahoma"/>
-                            </StackPanel>
-
-                        </ListViewItem>
-
-                    </ListView>
-                </StackPanel>
+                    <Button x:Name="ProductsMenu" Content = "Каталог товаров" FontFamily="Tahoma" Click ="ProductsMenu_Click" Height="50" Width="152"  Background="#FFFF4A6D"/>
+                    <Button x:Name="ServiceMenu" Content="Записаться" FontFamily="Tahoma" Click ="ServiceMenu_Click"  Background="#FFFF4A6D" Height="50"/>
+                    <Button x:Name="HomeMenu" Content="На главную"  FontFamily="Tahoma" Click ="HomeMenu_Click"  Background="#FFFF4A6D" Height="50"/>
+                 </StackPanel>
             </Grid>
         </Grid>
     </Grid>
